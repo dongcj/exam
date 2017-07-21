@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>postfile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	body,input{font-size:9pt}
+	body,form{margin:0;padding:0}
+</style>
+<script>
+	checkfile = function(){
+		var f = document.getElementById("cfiles").value + "";	//获取文件
+		f = f.toLowerCase();
+		if(f.indexOf("jpg")>0 || f.indexOf("gif")>0 || f.indexOf("png")>0 || f.indexOf("bmp")>0){
+			return true;
+		}else{
+			alert("只允许上传图片文件.");
+			return false;
+		}
+		
+	};
+	
+</script>
+</head>
+<body>
+<form name="frm" method="post" action="postfile.jsp" ENCTYPE="multipart/form-data" onsubmit="return checkfile();">
+		选择文件
+		<input type="file" name="files" size="10" id="cfiles" onchange="checkfile()" />
+
+		<input type="submit" name="submit" id="btnsubmit" value="上传">
+
+</form>
+</body>
+</html>

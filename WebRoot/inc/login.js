@@ -1,0 +1,44 @@
+
+$(document).ready(function(){
+	$("#btnsubmit").click(function(){
+		
+		$get("loginform").action = "process.do?action=login";
+		
+		var username = $get("username").value;
+		var userpass = $get("userpass").value;
+		
+		// 暂时取消验证码功能
+		var tvery = $get("tvery").value;
+		
+		if(username==null || ""==username){
+			alert("用户名不能为空");
+			return;
+		}
+		
+		if(userpass==null || ""==userpass){
+			alert("密码不能为空");
+			return;
+		}
+		
+		// 暂时取消验证码功能
+		if(tvery==null || ""==tvery){
+			alert("验证码不能为空");
+			return;
+		};
+		
+		$get("loginform").submit();
+		
+	}); 
+}); 
+
+
+
+keys = function(){
+	if(event.keyCode==13){
+		$("#btnsubmit").click();
+	}
+};
+
+
+
+
