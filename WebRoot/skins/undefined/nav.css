@@ -1,0 +1,36 @@
+#breadcrumb{
+    background-image:url('../images/bc_bg.gif'); 
+    background-repeat:repeat-x;
+    height:30px;
+    line-height:30px;
+    color:#9b9b9b;
+    border:solid 1px #eee;
+	border-bottom:solid 1px #cde;
+	border-right:solid 1px #cde;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+#breadcrumb li {
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+}
+#breadcrumb a{
+    height:30px;
+    display:inline;
+    float:left;
+    background-image:url('../images/bc_separator.gif'); 
+    background-repeat:no-repeat; 
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+}
+#breadcrumb a:hover{color:#f00}
+#breadcrumb a img{border:none}
+
+.home{border:none;margin: 7px 0px;}
+.srch{display:inline; padding:5px 10px 0 0;}
+

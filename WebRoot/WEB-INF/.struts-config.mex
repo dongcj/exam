@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/page.do" location="45,30" dimension="211,166" />
+  <StrutsActivity path="/system/admin.do" location="45,240" dimension="211,88" />
+  <StrutsActivity path="/system/adminrole.do" location="45,375" dimension="211,88" />
+  <StrutsActivity path="/system/db.do" location="45,510" dimension="211,88" />
+  <StrutsActivity path="/system/question.do" location="45,645" dimension="211,88" />
+  <StrutsActivity path="/process.do" location="615,240" dimension="226,106" />
+  <StrutsActivity path="/system/paper.do" location="45,780" dimension="211,88" />
+  <StrutsActivity path="/ajax.do" location="615,375" dimension="226,88" />
+  <StrutsActivity path="/system/news.do" location="45,945" dimension="211,88" />
+  <StrutsActivity path="/system/usergroups.do" location="45,1125" dimension="211,88" />
+  <StrutsActivity path="/system/user.do" location="45,1260" dimension="211,88" />
+  <StrutsActivity path="/user/paper.do" location="1185,30" dimension="229,88" />
+  <StrutsActivity path="/user/selfpaper.do" location="1185,165" dimension="225,88" />
+  <StrutsActivity path="/user/qc.do" location="1185,300" dimension="226,88" />
+  <StrutsActivity path="/user/my.do" location="1185,435" dimension="226,88" />
+  <StrutsActivity path="/system/paperexam.do" location="45,1410" dimension="211,88" />
+  <StrutsActivity path="/system/analysis.do" location="45,1545" dimension="218,88" />
+  <StrutsActivity path="/system/config.do" location="45,1695" dimension="250,84" />
+  <StrutsActivity path="/system/plus.do" location="45,1830" dimension="238,84" />
+  <StrutsActivity path="/system/log.do" location="45,1950" dimension="241,84" />
+  <StrutsActivity path="msg;6" location="615,30" dimension="226,75" />
+  <StrutsActivity path="/WEB-INF/page/system_top.jsp" location="330,30" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/system_menu.jsp" location="330,90" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/comm_news.jsp" location="555,150" dimension="202,48" />
+  <StrutsActivity path="/WEB-INF/page/system_switch.jsp" location="330,150" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/user_plus.jsp" location="330,-30" dimension="202,48" />
+  <StrutsActivity path="/WEB-INF/page/system_admin.jsp" location="330,240" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/system_admin_roles.jsp" location="330,375" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/system_db.jsp" location="330,510" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/system_question.jsp" location="330,645" dimension="196,49" />
+  <StrutsActivity path="/index.jsp" location="900,240" dimension="211,49" />
+  <StrutsActivity path="/login.jsp" location="900,300" dimension="211,49" />
+  <StrutsActivity path="/WEB-INF/page/system_paper.jsp" location="330,780" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/system_paper_detail.jsp" location="330,855" dimension="241,49" />
+  <StrutsActivity path="/WEB-INF/page/system_paper_rand.jsp" location="555,780" dimension="222,49" />
+  <StrutsActivity path="/WEB-INF/page/system_news.jsp" location="330,945" dimension="191,49" />
+  <StrutsActivity path="/WEB-INF/page/system_newstype.jsp" location="330,1020" dimension="213,49" />
+  <StrutsActivity path="/WEB-INF/page/system_user_groups.jsp" location="330,1125" dimension="226,49" />
+  <StrutsActivity path="/WEB-INF/page/system_user.jsp" location="330,1260" dimension="187,49" />
+  <StrutsActivity path="/WEB-INF/page/user_paper.jsp" location="1485,30" dimension="181,49" />
+  <StrutsActivity path="/WEB-INF/page/user_paper_history.jsp" location="1485,90" dimension="220,49" />
+  <StrutsActivity path="/WEB-INF/page/user_paper_self.jsp" location="1485,165" dimension="204,49" />
+  <StrutsActivity path="/WEB-INF/page/user_qc.jsp" location="1485,300" dimension="196,49" />
+  <StrutsActivity path="/WEB-INF/page/user_profile.jsp" location="1485,435" dimension="183,49" />
+  <StrutsActivity path="/WEB-INF/page/system_paper_examinfo.jsp" location="330,1410" dimension="244,49" />
+  <StrutsActivity path="/WEB-INF/page/system_analysis.jsp" location="330,1545" dimension="204,49" />
+  <StrutsActivity path="/WEB-INF/page/system_config.jsp" location="345,1695" dimension="226,48" />
+  <StrutsActivity path="/WEB-INF/page/system_plus.jsp" location="345,1830" dimension="214,48" />
+  <StrutsActivity path="/WEB-INF/page/system_log.jsp" location="345,1950" dimension="208,48" />
+  <StrutsActivity path="/WEB-INF/page/system_message.jsp" location="900,30" dimension="208,49" />
+  <StrutsActivity path="/system/import.do" location="45,2085" dimension="250,84" />
+  <StrutsActivity path="/WEB-INF/page/system_import.jsp" location="345,2085" dimension="226,48" />
+  <StrutsTransition id="/system/question.do,to,/WEB-INF/page/system_question.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,669" />
+      <AbsolutePoint location="330,669" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/usergroups.do,to,/WEB-INF/page/system_user_groups.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,1149" />
+      <AbsolutePoint location="330,1149" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_paper.jsp,null,/system/paper.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,780" />
+      <AbsolutePoint location="428,748" />
+      <AbsolutePoint location="150,748" />
+      <AbsolutePoint location="150,780" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/paper.do,detail,/WEB-INF/page/system_paper_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,868" />
+      <AbsolutePoint location="180,883" />
+      <AbsolutePoint location="330,883" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/page.do,comm_news,/WEB-INF/page/comm_news.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,196" />
+      <AbsolutePoint location="150,214" />
+      <AbsolutePoint location="656,214" />
+      <AbsolutePoint location="656,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_question.jsp,null,/system/question.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,694" />
+      <AbsolutePoint location="428,709" />
+      <AbsolutePoint location="256,709" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/page.do,system_menu,/WEB-INF/page/system_menu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,114" />
+      <AbsolutePoint location="330,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_user_groups.jsp,null,/system/usergroups.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="443,1174" />
+      <AbsolutePoint location="443,1189" />
+      <AbsolutePoint location="256,1189" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/process.do,login,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="841,324" />
+      <AbsolutePoint location="900,324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/paper.do,rand,/WEB-INF/page/system_paper_rand.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,868" />
+      <AbsolutePoint location="150,919" />
+      <AbsolutePoint location="666,919" />
+      <AbsolutePoint location="666,829" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_user.jsp,null,/system/user.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="423,1309" />
+      <AbsolutePoint location="423,1324" />
+      <AbsolutePoint location="256,1324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/plus.do,to,/WEB-INF/page/system_plus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="283,1854" />
+      <AbsolutePoint location="345,1854" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/paper.do,to_history,/WEB-INF/page/user_paper_history.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1414,103" />
+      <AbsolutePoint location="1485,103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/my.do,to,/WEB-INF/page/user_profile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1411,459" />
+      <AbsolutePoint location="1485,459" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_admin_roles.jsp,null,/system/adminrole.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,424" />
+      <AbsolutePoint location="428,439" />
+      <AbsolutePoint location="256,439" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/paper.do,to,/WEB-INF/page/system_paper.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,804" />
+      <AbsolutePoint location="330,804" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/adminrole.do,to,/WEB-INF/page/system_admin_roles.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,399" />
+      <AbsolutePoint location="330,399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/page.do,system_top,/WEB-INF/page/system_top.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,54" />
+      <AbsolutePoint location="330,54" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_config.jsp,null,/system/config.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="458,1743" />
+      <AbsolutePoint location="458,1758" />
+      <AbsolutePoint location="295,1758" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/qc.do,to,/WEB-INF/page/user_qc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1411,324" />
+      <AbsolutePoint location="1485,324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/user.do,to,/WEB-INF/page/system_user.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,1284" />
+      <AbsolutePoint location="330,1284" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_admin.jsp,null,/system/admin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,289" />
+      <AbsolutePoint location="428,304" />
+      <AbsolutePoint location="256,304" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_news.jsp,null,/system/news.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="425,994" />
+      <AbsolutePoint location="425,1009" />
+      <AbsolutePoint location="256,1009" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/paperexam.do,to,/WEB-INF/page/system_paper_examinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,1434" />
+      <AbsolutePoint location="330,1434" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/process.do,index,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="841,264" />
+      <AbsolutePoint location="900,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/analysis.do,to,/WEB-INF/page/system_analysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="263,1569" />
+      <AbsolutePoint location="330,1569" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/news.do,to,/WEB-INF/page/system_news.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,969" />
+      <AbsolutePoint location="330,969" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/page.do,system_switch,/WEB-INF/page/system_switch.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,174" />
+      <AbsolutePoint location="330,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/log.do,to,/WEB-INF/page/system_log.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="286,1974" />
+      <AbsolutePoint location="345,1974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/paper.do,to,/WEB-INF/page/user_paper.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1414,54" />
+      <AbsolutePoint location="1485,54" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/admin.do,to,/WEB-INF/page/system_admin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,264" />
+      <AbsolutePoint location="330,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/news.do,to_newstype,/WEB-INF/page/system_newstype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,1033" />
+      <AbsolutePoint location="150,1048" />
+      <AbsolutePoint location="330,1048" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/import.do,to,/WEB-INF/page/system_import.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="295,2109" />
+      <AbsolutePoint location="345,2109" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/selfpaper.do,to,/WEB-INF/page/user_paper_self.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1410,189" />
+      <AbsolutePoint location="1485,189" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="msg;6,null,/WEB-INF/page/system_message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="841,54" />
+      <AbsolutePoint location="900,54" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/db.do,to,/WEB-INF/page/system_db.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="256,534" />
+      <AbsolutePoint location="330,534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/page.do,user_plus,/WEB-INF/page/user_plus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,30" />
+      <AbsolutePoint location="150,-6" />
+      <AbsolutePoint location="330,-6" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_plus.jsp,null,/system/plus.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="452,1878" />
+      <AbsolutePoint location="452,1893" />
+      <AbsolutePoint location="283,1893" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/page/system_db.jsp,null,/system/db.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,559" />
+      <AbsolutePoint location="428,574" />
+      <AbsolutePoint location="256,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/system/config.do,to,/WEB-INF/page/system_config.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="295,1719" />
+      <AbsolutePoint location="345,1719" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

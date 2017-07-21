@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="adminForm" type="com.tom.struts.form.AdminForm" />
+		<form-bean name="adminroleForm" type="com.tom.struts.form.AdminroleForm" />
+		<form-bean name="dbForm" type="com.tom.struts.form.DbForm" />
+		<form-bean name="questionForm" type="com.tom.struts.form.QuestionForm" />
+		<form-bean name="paperForm" type="com.tom.struts.form.PaperForm" />
+		<form-bean name="newsForm" type="com.tom.struts.form.NewsForm" />
+		<form-bean name="usergroupsForm" type="com.tom.struts.form.UsergroupsForm" />
+		<form-bean name="userForm" type="com.tom.struts.form.UserForm" />
+		<form-bean name="configForm" type="com.tom.struts.form.ConfigForm" />
+		<form-bean name="plusForm" type="com.tom.struts.form.PlusForm" />
+
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards>
+		<forward name="msg" path="/WEB-INF/page/system_message.jsp" />
+	</global-forwards>
+
+	<action-mappings>
+		<action parameter="action" path="/page"
+			type="com.tom.struts.action.PageAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="system_top" path="/WEB-INF/page/system_top.jsp" />
+			<forward name="comm_news" path="/WEB-INF/page/comm_news.jsp" />
+			<forward name="system_menu" path="/WEB-INF/page/system_menu.jsp" />
+			<forward name="system_switch" path="/WEB-INF/page/system_switch.jsp" />
+			<forward name="user_plus" path="/WEB-INF/page/user_plus.jsp" />
+		</action>
+
+		<action attribute="adminForm" input="/WEB-INF/page/system_admin.jsp"
+			name="adminForm" parameter="action" path="/system/admin" scope="request"
+			type="com.tom.struts.action.AdminAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_admin.jsp" />
+		</action>
+
+		<action attribute="adminroleForm" input="/WEB-INF/page/system_admin_roles.jsp"
+			name="adminroleForm" parameter="action" path="/system/adminrole"
+			scope="request" type="com.tom.struts.action.AdminroleAction"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_admin_roles.jsp" />
+		</action>
+
+		<action attribute="dbForm" input="/WEB-INF/page/system_db.jsp"
+			name="dbForm" parameter="action" path="/system/db" scope="request"
+			type="com.tom.struts.action.DbAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_db.jsp" />
+		</action>
+
+		<action attribute="questionForm" input="/WEB-INF/page/system_question.jsp"
+			name="questionForm" parameter="action" path="/system/question" scope="request"
+			type="com.tom.struts.action.QuestionAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_question.jsp" />
+		</action>
+
+		<action parameter="action" path="/process"
+			type="com.tom.struts.action.ProcessAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="index" path="/index.jsp" redirect="true" />
+			<forward name="login" path="/login.jsp" redirect="true" />
+			<forward name="login3" path="/examiner.jsp" redirect="true" />
+			<!-- examiner former path="/examiner.jsp" -->
+			<forward name="examiner" path="/login.jsp" redirect="true" />
+		</action>
+
+		<action attribute="paperForm" input="/WEB-INF/page/system_paper.jsp"
+			name="paperForm" parameter="action" path="/system/paper" scope="request"
+			type="com.tom.struts.action.PaperAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_paper.jsp" />
+			<forward name="detail" path="/WEB-INF/page/system_paper_detail.jsp" />
+			<forward name="rand" path="/WEB-INF/page/system_paper_rand.jsp" />
+		</action>
+
+		<action parameter="action" path="/ajax"
+			type="com.tom.struts.action.AjaxAction" validate="false">
+			<set-property property="cancellable" value="true" />
+		</action>
+
+		<action attribute="newsForm" input="/WEB-INF/page/system_news.jsp"
+			name="newsForm" parameter="action" path="/system/news" scope="request"
+			type="com.tom.struts.action.NewsAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_news.jsp" />
+			<forward name="to_newstype" path="/WEB-INF/page/system_newstype.jsp" />
+		</action>
+
+		<action attribute="usergroupsForm" input="/WEB-INF/page/system_user_groups.jsp"
+			name="usergroupsForm" parameter="action" path="/system/usergroups"
+			scope="request" type="com.tom.struts.action.UsergroupsAction"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_user_groups.jsp" />
+		</action>
+
+		<action attribute="userForm" input="/WEB-INF/page/system_user.jsp"
+			name="userForm" parameter="action" path="/system/user" scope="request"
+			type="com.tom.struts.action.UserAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_user.jsp" />
+		</action>
+
+		<action parameter="action" path="/user/paper"
+			type="com.tom.struts.action.UserpaperAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/user_paper.jsp" />
+			<forward name="to_history" path="/WEB-INF/page/user_paper_history.jsp" />
+			<forward name="user_showScore" path="/WEB-INF/page/user_showScore.jsp" />
+		</action>
+
+		<action parameter="action" path="/user/selfpaper"
+			type="com.tom.struts.action.SelfpaperAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/user_paper_self.jsp" />
+		</action>
+
+		<action parameter="action" path="/user/qc"
+			type="com.tom.struts.action.QcAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/user_qc.jsp" />
+		</action>
+
+		<action attribute="userForm" name="userForm" parameter="action"
+			path="/user/my" scope="request" type="com.tom.struts.action.MyAction"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/user_profile.jsp" />
+		</action>
+
+		<action parameter="action" path="/system/paperexam"
+			type="com.tom.struts.action.PaperexamAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_paper_examinfo.jsp" />
+		</action>
+
+		<action parameter="action" path="/system/analysis"
+			type="com.tom.struts.action.AnalysisAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_analysis.jsp" />
+		</action>
+
+		<action attribute="configForm" input="/WEB-INF/page/system_config.jsp"
+			name="configForm" parameter="action" path="/system/config" scope="request"
+			type="com.tom.struts.action.ConfigAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_config.jsp" />
+		</action>
+
+		<action attribute="plusForm" input="/WEB-INF/page/system_plus.jsp"
+			name="plusForm" parameter="action" path="/system/plus" scope="request"
+			type="com.tom.struts.action.PlusAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_plus.jsp" />
+		</action>
+
+		<action parameter="action" path="/system/log"
+			type="com.tom.struts.action.LogAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_log.jsp" />
+		</action>
+
+		<action parameter="action" path="/system/import"
+			type="com.tom.struts.action.ImportAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_import.jsp" />
+		</action>
+		
+		<action parameter="action" path="/system/masimpq"
+			type="com.tom.struts.action.ImportAction" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="to" path="/WEB-INF/page/system_masimp.jsp" />
+		</action>
+
+	</action-mappings>
+
+	<message-resources parameter="com.tom.struts.ApplicationResources" />
+</struts-config>
+
